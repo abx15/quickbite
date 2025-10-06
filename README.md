@@ -40,7 +40,7 @@ Clone the repository and install dependencies:
 
 ```bash
 # Clone repo
-git clone https://github.com/your-username/quickbite.git
+git clone https://github.com/abx15/quickbite.git
 
 # Go to project folder
 cd quickbite
