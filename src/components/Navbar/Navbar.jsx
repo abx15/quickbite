@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { GoHeartFill } from "react-icons/go";
 import { IoBagHandle } from "react-icons/io5";
 import { FiSearch } from "react-icons/fi";
@@ -12,9 +12,18 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   }
 
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handlScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+
+    window.addEventListener('scroll', handlScroll);
+    return () => window.removeEventListener('scroll', handlScroll);
+  })
 
   return (
-    <header className='bg-white fixed top-0 right-0 left-0 z-50'>
+    <header className={`bg-white fixed top-0 right-0 left-0 z-50 ${isScrolled ? 'drop-shadow-[0_4px_25px_rgba(0,0,0,0.07)]' : ''}`}>
       <nav className='flex justify-between max-w-[1400px] items-center mx-auto md:h-[14vh] h-[12vh] px-10'>
         <a className='text-3xl font-bold' href="">Quic<span className='text-orange-500 uppercase'>kB</span>ite</a>
 
@@ -85,7 +94,7 @@ const Navbar = () => {
           <a href="" className='text-zinc-800 text-2xl'><IoBagHandle /></a>
 
           <button href="" onClick={toggelMenu} className='text-zinc-800 text-3xl md:hidden'>
-            {showMenu?<RxCross2 />:<IoMenu/>}
+            {showMenu ? <RxCross2 /> : <IoMenu />}
           </button>
         </div>
 
