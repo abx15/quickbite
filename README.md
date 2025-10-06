@@ -1,16 +1,52 @@
-# React + Vite
+# 🍔 QuickBite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+QuickBite is a **modern food ordering web application** built with **React + Vite + Tailwind CSS + React Icons**.  
+It provides a clean, responsive, and user-friendly interface for restaurants, cafes, or food delivery services.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 📱 **Responsive Design** – Works seamlessly on desktop and mobile.  
+- 🎨 **Modern UI** – Styled with Tailwind CSS and gradient effects.  
+- 🍴 **Food Ordering Pages** – Browse menu, add to cart, and checkout (demo version).  
+- 🔍 **Search Bar** – Quickly search for items from the navbar.  
+- 🌙 **Smooth Animations** – Hover effects & transitions.  
+- ⚡ **Built with Vite** – Super-fast dev server and HMR.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – Component-based UI  
+- **Vite** – Next-gen frontend tooling  
+- **Tailwind CSS** – Utility-first styling  
+- **React Icons** – Beautiful icons for UI  
+- **JavaScript (ES6+)**  
+
+---
+
+## 📸 Screenshots
+
+_Add your project screenshots here_
+
+![QuickBite Screenshot](./screenshot.png)
+
+---
+
+## 🔧 Installation & Setup
+
+Clone the repository and install dependencies:
+
+```bash
+# Clone repo
+git clone https://github.com/your-username/quickbite.git
+
+# Go to project folder
+cd quickbite
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
